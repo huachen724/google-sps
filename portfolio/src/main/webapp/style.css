@@ -2,8 +2,41 @@
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  background-color: rgba(167, 230, 255, 0.308);
+  font-family: Monaco, Lucida Console, Monospace; 
+}
+#body { /*this dont work D:*/
+    background-color: rgba(167, 230, 255, 0.308);
 }
 
 #greeting-container {
   margin-top: 20px;
 }
+
+.resize{
+    width: 10%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    border-radius: 100%;
+  }
+  .resize:hover {
+    background-color: rgb(46, 46, 46);
+  }
+/*
+  .image-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-thumbnails img {
+    margin: 10px;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  
+  .image-thumbnails img:hover {
+    border: thick solid black;
+  }
+  */
