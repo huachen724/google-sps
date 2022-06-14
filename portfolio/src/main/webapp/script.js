@@ -13,7 +13,7 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random mantra to the page.
  */
 function addRandomMantra() {
   const spsMantras =
@@ -42,3 +42,19 @@ function addRandomMantra() {
   const mantraContainer = document.getElementById('mantra-container');
   mantraContainer.innerText = mantra;
 }
+
+//fetch the json object that consists of random facts (3)
+async function showString() {
+    const responseFromServer = await fetch('/string');
+    const textFromResponse = await responseFromServer.text();
+    const stringContainer = await JSON.parse(textFromResponse);
+
+    //randomly pick one of the facts
+    randomString = await stringContainer[Math.floor(Math.random() * stringContainer.length)];
+
+    //link it with the html via getElementById
+    const stringElement = document.getElementById('string-container');
+    stringElement.innerText = randomString;
+
+  }
+  

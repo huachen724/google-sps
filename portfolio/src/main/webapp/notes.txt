@@ -1,0 +1,2 @@
+to deploy, use this command --> mvn package appengine:deploy
+to test locally, use this command --> mvn package exec:java

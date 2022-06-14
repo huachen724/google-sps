@@ -20,23 +20,23 @@
     position: relative;
     border-radius: 100%;
   }
-  .resize:hover {
+
+.resize:hover {
     background-color: rgb(46, 46, 46);
-  }
-/*
-  .image-thumbnails {
+}
+
+.file-thumbnails {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .image-thumbnails img {
+}
+
+.file-thumbnails img {
     margin: 10px;
     max-height: 200px;
     max-width: 200px;
-  }
-  
-  .image-thumbnails img:hover {
+}
+
+.file-thumbnails img:hover {
     border: thick solid black;
-  }
-  */
+}    
