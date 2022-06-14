@@ -2,18 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Hua's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <h1>Hi! I'm Hua</h1>
+      <p>Welcome to my portfolio!</p>
+      <p>I am a current Junior at Lehigh University majoring in CS. Outside of CS, I enjoy travelling, photography, and much more! Check out my portfolio to get to know me!</p>
+      <p id = "icons">
+        <a href="https://github.com/huachen724" target="_blank"><img src="files/github.png" class="resize" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/huajchen" target="_blank"><img src="files/linkedin.png" class="resize" alt="LinkedIn"></a>
+        <a href="files/resume.pdf" target="_blank"><img src="files/resume.png" class="resize" alt="Resume"></a>
+        <a href="mailto: huachen724@gmail.com"><img src="files/mail.png" class="resize" alt="Mail"></a>
+      </p>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p> 
+      <p>Click here to get some of my favorite SPS Participant mantras:</p>
+      <button onclick="addRandomMantra()">Mantra</button>
+      <div id="mantra-container"></div>
+      <p>Click <a href="travel.html">here</a> to see my digital art collection!</p>
+      <p>Click <a href="photo.html">here</a> to see my photography collection!</p>
+      <p>Click <a href="project.html">here</a> to see my previous projects!</p>
+      <br>
+      <p>Click this button to see my hardcoded string!</p>
+      <button onclick = "showString();">
+          Get string
+      </button>
+      <p id = "string-container"></p>
+      <p>Click <a href="/string">here</a> to see the server response directly.</p>
+      <br>
+      <form action="/form-handler" method="POST">
+        <p>Leave messages here for me:</p>
+        <textarea name="text-input">Hi Hua...</textarea>
+        <br/>
+        <input type="submit" />
+      </form>
     </div>
+
   </body>
 </html>
